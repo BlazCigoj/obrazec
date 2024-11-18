@@ -30,7 +30,7 @@ The registration form is designed for users to sign up and provide all necessary
 Below are images illustrating the registration form and its layout:
 
 ### Personal Information Section
-![Personal Information](screenshots/personal-info.png)
+![Personal Information](screenshots/header.png)
 
 ### Contact Information Section
 ![Contact Information](screenshots/contact-info.png)
