@@ -28,13 +28,10 @@ The registration form is designed for users to sign up and provide all necessary
 ## Screenshots
 Below are images illustrating the registration form and its layout:
 
-### Personal Information Section
 ![Personal Information](Estave/screenshots/header.png)
 
-### Contact Information Section
 ![Contact Information](Estave/screenshots/body.png)
 
-### Account and Financial Details
 ![Account Details](Estave/screenshots/end.png)
 
 ## How to Use
