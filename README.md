@@ -32,7 +32,7 @@ Below are images illustrating the registration form and its layout:
 ![Personal Information](Estave/screenshots/header.png)
 
 ### Contact Information Section
-![Contact Information](Estave/screenshots/body1.png)
+![Contact Information](Estave/screenshots/body.png)
 
 ### Account and Financial Details
 ![Account Details](Estave/screenshots/end.png)
