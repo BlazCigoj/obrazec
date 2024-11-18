@@ -44,6 +44,3 @@ Below are images illustrating the registration form and its layout:
 2. **Open the `index.html` file** in your browser to see the form in action.
 
 3. **Submit form** data to your preferred backend service for handling user registration (a backend example script can be provided for integration).
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
