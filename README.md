@@ -21,7 +21,7 @@ The registration form is designed for users to sign up and provide all necessary
 
 ## Technologies Used
 - **HTML5**: Markup structure of the form.
-- **CSS3**: Styling for visual appeal and readability.
+- **CSS**: Styling for visual appeal and readability.
 - **JavaScript**: Enhancements for form validation and interaction.
 
 ## Screenshots
