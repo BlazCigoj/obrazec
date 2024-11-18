@@ -14,13 +14,13 @@
         <div class="test">
             <img src="eStaveLogo.svg" usemap="#eStave">
             <map name="eStave">
-                <area shape="rect" coords="40,36,50,26" href="" title="hello">
+                <area shape="rect" coords="40,36,50,26" href="javascript:void(0);" onclick="showAlert()">
             </map>
         </div>
         <nav>
             <ul class="buttons">
                 <li><button style="border: 2px solid blue;">Prijava</button></li>
-                <li><button style="border: 2px solid blue;">Postani Clan</button></li>
+                <li><button style="border: 2px solid blue;">Postani Član</button></li>
                 <li><button>Pozabil sem</button></li>
                 <li></li>
                 <li></li>
@@ -41,7 +41,7 @@
             </ul>
         </nav>
         <div id="starost">
-            <a href=""><img src="starost.png" alt="starost"><img src="igrajteOdgovorno.png" alt="igrajteOdgovorno"></a>
+            <a href=""><img src="/slike/starost.png" alt="starost"><img src="/slike/igrajteOdgovorno.png" alt="igrajteOdgovorno"></a>
         </div>
     </header>
     <form class="form-container" action="#" method="post">
@@ -55,16 +55,16 @@
 
         <div class="group">
             <label for="ime">Ime</label>
-            <input type="text" id="ime" name="ime" placeholder="Vnesite vaše ime" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaše ime."></div>
+            <input type="text" id="ime" name="ime" placeholder="Vnesite vaše ime" class="group-margin" maxlength="13" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaše ime."></div>
         </div>
 
         <div class="group">
             <label for="priimek">Priimek</label>
-            <input type="text" id="priimek" name="priimek" placeholder="Vnesite vaš priimek" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš priimek."></div>
+            <input type="text" id="priimek" name="priimek" placeholder="Vnesite vaš priimek" class="group-margin" maxlength="13" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš priimek."></div>
         </div>
 
         <div class="group">
@@ -225,15 +225,15 @@
                     <option value="1924">1924</option>
                 </select>
             </div>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš rojstni datum."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš rojstni datum."></div>
         </div>
 
         <div class="group">
             <label for="davcna">Davčna številka</label>
-            <input type="text" id="davcna-stevilka" name="davcna-stevilka" placeholder="Vnesite davčno številko" class="group-margin" required>
-                <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-                <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vašo davčno številko."></div>
+            <input type="number" id="davcna-stevilka" name="davcna-stevilka" placeholder="Vnesite davčno številko" class="group-margin" required>
+                <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+                <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vašo davčno številko."></div>
         </div>
 
         <div class="section">
@@ -242,43 +242,43 @@
 
         <div class="group">
             <label for="naslov">Naslov (ulica in hišna številka)</label>
-            <input type="text" id="naslov-hisna" name="naslov-hisna" placeholder="Vnesi naslov" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš naslov."></div>
+            <input type="text" id="naslov-hisna" name="naslov-hisna" placeholder="Vnesi naslov" class="group-margin" maxlength="23" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš naslov."></div>
         </div>
 
         <div class="group">
             <label for="postna">Pošta (številka ali kraj)</label>
-            <input type="text" id="postna-stevilka" name="postna-stevilka" placeholder="Vnesi poštno številko" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite pošto ALI poštno številko."></div>
+            <input type="text" id="postna-stevilka" name="postna-stevilka" placeholder="Vnesi poštno številko" class="group-margin" maxlength="23" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite pošto ALI poštno številko."></div>
         </div>
 
         <div class="group">
             <label for="stalnopreb">Občina stalnega prebivališča</label>
-            <input type="text" id="stalnopreb" name="stalnopreb" placeholder="Vnesi stalno prebivališče" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite občino stalnega prebivališča."></div>
+            <input type="text" id="stalnopreb" name="stalnopreb" placeholder="Vnesi stalno prebivališče" class="group-margin" maxlength="23" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite občino stalnega prebivališča."></div>
         </div>
 
         <div class="group">
             <label for="el-naslov">Elektronski naslov</label>
             <input type="email" id="el-naslov1" name="el-naslov1" placeholder="Vnesi elektronski naslov" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš aktiven elektronski naslov."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš aktiven elektronski naslov."></div>
         </div>
 
         <div class="group" id="samo-exclamation1">
             <label for="el-naslov2">Ponovno vpiši elektronski naslov</label>
             <input type="email" id="el-naslov2" name="el-naslov2" placeholder="Ponovno vnesi elektronski naslov" class="group-margin" required>
-            <div class="icon" id="exclamation-mark1"><img src="exclamation-mark.png" alt="exclamation-mark" class="exclamation-mark2"></div>
+            <div class="icon" id="exclamation-mark1"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" class="exclamation-mark2"></div>
         </div>
 
         <div class="group">
             <label for="tel-st">Številka mobilnega telefona</label>
-            <input type="text" id="tel-st" name="tel-st" placeholder="Vnesi telefonsko številko" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vašo mobilno številko."></div>
+            <input type="number" id="tel-st" name="tel-st" placeholder="Vnesi telefonsko številko" class="group-margin" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vašo mobilno številko."></div>
         </div>
 
         <div class="section">
@@ -295,33 +295,33 @@
             <li class="posta">
                 <div class="group">
                     <label for="ime">Ime</label>
-                    <input type="text" id="ime" name="ime" placeholder="Vnesite vaše ime" class="group-margin">
-                    <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaše ime."></div>
+                    <input type="text" id="ime" name="ime" placeholder="Vnesite vaše ime" class="group-margin" maxlength="13">
+                    <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaše ime."></div>
                 </div>
             </li>
             <li class="posta">
                 <div class="group">
                     <label for="priimek">Priimek</label>
-                    <input type="text" id="priimek" name="priimek" placeholder="Vnesite vaš priimek" class="group-margin">
-                    <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš priimek."></div>
+                    <input type="text" id="priimek" name="priimek" placeholder="Vnesite vaš priimek" class="group-margin" maxlength="13">
+                    <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš priimek."></div>
                 </div>
             </li>
             <li class="posta">
                 <div class="group">
                     <label for="naslov">Naslov (ulica in hišna številka)</label>
-                    <input type="text" id="naslov-hisna" name="naslov-hisna" placeholder="Vnesi naslov" class="group-margin">
-                    <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš naslov."></div>
+                    <input type="text" id="naslov-hisna" name="naslov-hisna" placeholder="Vnesi naslov" class="group-margin" maxlength="23">
+                    <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš naslov."></div>
                 </div>
             </li>
             <li class="posta">
                 <div class="group">
                     <label for="postna">Pošta (številka ali kraj)</label>
-                    <input type="text" id="postna-stevilka" name="postna-stevilka" placeholder="Vnesi poštno številko" class="group-margin">
-                    <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite pošto ALI poštno številko."></div>
+                    <input type="text" id="postna-stevilka" name="postna-stevilka" placeholder="Vnesi poštno številko" class="group-margin" maxlength="30">
+                    <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite pošto ALI poštno številko."></div>
                 </div>
             </li>
         </ol>
@@ -333,8 +333,8 @@
         <div class="group">
             <label for="kraj-roj">Kraj rojstva</label>
             <input type="text" id="kraj-rojstva" name="kraj-rojstva" placeholder="Vpiši kraj rojstva" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite kraj rojstva."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite kraj rojstva."></div>
         </div>
 
         <div class="group">
@@ -560,8 +560,8 @@
                 <option value="217">Zelenortski otoki</option>
                 <option value="218">Zeleniški otoki</option>
             </select>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Izberite vaše državljanstvo."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Izberite vaše državljanstvo."></div>
         </div>
 
         <div class="group">
@@ -570,8 +570,8 @@
                 <option value="moski">Moški</option>
                 <option value="zenska">Ženski</option>
             </select>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Izberite vaš spol."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Izberite vaš spol."></div>
         </div>
 
         <div class="group">
@@ -584,8 +584,8 @@
                 <option value="4">Študent</option>
                 <option value="5">Upokojenec</option>
             </select>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš status."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite vaš status."></div>
         </div>
 
         <div class="group">
@@ -595,8 +595,8 @@
                 <option value="1">NE</option>
                 <option value="2">DA</option>
             </select>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Opredelite se, ali ste politično izpostavljena oseba."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Opredelite se, ali ste politično izpostavljena oseba."></div>
         </div>
 
         <div class="group">
@@ -616,22 +616,22 @@
                 <option value="2">Potni list</option>
                 <option value="3">Vozniško dovoljenje</option>
             </select>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Izberite vrsto osebnega dokumenta."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Izberite vrsto osebnega dokumenta."></div>
         </div>
 
         <div class="group">
             <label for="st-osebnega">Številka osebnega dokumenta</label>
-            <input type="text" id="st-osebnega" name="stevilka-osebnega" placeholder="Vnesite številko osebnega dokumenta" class="group-margin">
-                <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-                <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite številko izbranega osebnega dokumenta."></div>
+            <input type="number" id="st-osebnega" name="stevilka-osebnega" placeholder="Vnesite številko osebnega dokumenta" class="group-margin">
+                <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+                <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite številko izbranega osebnega dokumenta."></div>
         </div>
 
         <div class="group">
             <label for="izdajatelj">Izdajatelj osebnega dokumenta</label>
-            <input type="text" id="izdajatelj-osebnega" name="izdajatelj-osebnega-dokumenta" placeholder="Vnesite izdajatelja osebnega dokumenta" class="group-margin">
-                <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-                <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite Izdajatelja osebnega dokumenta."></div>
+            <input type="text" id="izdajatelj-osebnega" name="izdajatelj-osebnega-dokumenta" placeholder="Vnesite izdajatelja osebnega dokumenta" class="group-margin" maxlength="29">
+                <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+                <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite Izdajatelja osebnega dokumenta."></div>
         </div>
 
         <div class="group">
@@ -793,8 +793,8 @@
                     <option value="1924">1924</option>
                 </select>
             </div>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite datum izdaje izbranega osebnega dokumenta."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite datum izdaje izbranega osebnega dokumenta."></div>
         </div>
 
         <div class="group">
@@ -956,7 +956,7 @@
                     <option value="1924">1924</option>
                 </select>
             </div>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark"  class="exclamation-mark2"></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark"  class="exclamation-mark2"></div>
         </div>
 
         <div class="section">
@@ -972,7 +972,7 @@
                 <input type="text" maxlength="4" id="trr3" size="4" inputmode="numeric" pattern="\d{4}" required>
                 <input type="text" maxlength="3" id="trr4" size="3" inputmode="numeric" pattern="\d{3}" required>
             </div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite 15 mestno številko vašega osebnega računa (TRR). Številko potrebujemo pri izplačilu sredstev na vaš TRR."></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite 15 mestno številko vašega osebnega računa (TRR). Številko potrebujemo pri izplačilu sredstev na vaš TRR."></div>
         </div>
 
         <div class="section">
@@ -981,30 +981,30 @@
 
         <div class="group">
             <label for="up-ime">Uporabniško ime</label>
-            <input type="text" name="Uporabniško-ime" id="idupime" placeholder="Vnesi uporabniško ime" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vpišite uporabniško ime, ki naj vsebuje najmanj 4 in največ 13 znakov"></div>
+            <input type="text" name="Uporabniško-ime" id="idupime" placeholder="Vnesi uporabniško ime" class="group-margin" maxlength="30" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vpišite uporabniško ime, ki naj vsebuje najmanj 4 in največ 13 znakov"></div>
         </div>
 
         <div class="group">
             <label for="geslo">Geslo</label>
             <input type="password" name="Geslo" id="geslo" placeholder="Vnesi geslo" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Geslo mora vsebovati od 8 do 15 znakov, sestavljeno mora biti vsaj iz dveh tipov znakov (male črke, velike črke, številke, posebni znaki). Geslo ne sme vsebovati uporabniškega imena in rojstnega datuma."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Geslo mora vsebovati od 8 do 15 znakov, sestavljeno mora biti vsaj iz dveh tipov znakov (male črke, velike črke, številke, posebni znaki). Geslo ne sme vsebovati uporabniškega imena in rojstnega datuma."></div>
         </div>
 
         <div class="group">
             <label for="pon-geslo">Ponovi geslo</label>
             <input type="password" name="ponovi-geslo" id="pongeslo" placeholder="Ponovno vnesi geslo" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Ponovno vpišite izbrano geslo."></div>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Ponovno vpišite izbrano geslo."></div>
         </div>
 
         <div class="group">
             <label for="vzdevek">Vzdevek</label>
-            <input type="text" name="Vzdevek" id="vzdevek" placeholder="Vnesi tvoj vzdevek" class="group-margin" required>
-            <div class="icon"><img src="exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
-            <div class="icon"><img src="question-mark.png" alt="question-mark" id="question-mark" title="Vnesite željeni vzdevek, katerega potrebujemo za prikaz prijavljenega igralca in za objavo dobitnikov."></div>
+            <input type="text" name="Vzdevek" id="vzdevek" placeholder="Vnesi tvoj vzdevek" class="group-margin" maxlength="30" required>
+            <div class="icon"><img src="/slike/exclamation-mark.png" alt="exclamation-mark" id="exclamation-mark"></div>
+            <div class="icon"><img src="/slike/question-mark.png" alt="question-mark" id="question-mark" title="Vnesite željeni vzdevek, katerega potrebujemo za prikaz prijavljenega igralca in za objavo dobitnikov."></div>
         </div>
         <div class="checkbox1">
             <input type="checkbox" class="checkbox"> Potrjujem, da so moji osebni podatki resnični, točni in ažurni. Zavedam se, da
@@ -1031,7 +1031,29 @@
         </div>
         </div>
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
+        function showAlert() {
+            Swal.fire({
+                title: 'Credits:',
+                text: 'Avtor: Blaž Cigoj',
+                icon: 'info',
+                confirmButtonText: 'Got it!',
+                background: 'lightgradient', 
+                color: '#2c3e50', 
+                confirmButtonColor: '#0066cc',
+                showCloseButton: true, 
+                imageUrl: 'eStaveLogo.svg',
+                imageWidth: 100,
+                imageAlt: 'eStave Logo',
+                customClass: {
+                    popup: 'custom-swal-popup',
+                    title: 'custom-swal-title',
+                    confirmButton: 'custom-swal-button'
+                }
+            });
+        }
+
         document.addEventListener('DOMContentLoaded', function() {
         const trrInputs = document.querySelectorAll('#trr input');
         
@@ -1072,6 +1094,28 @@
             });
         });
     </script>
+    <style>
+        /* Custom styling for SweetAlert */
+        .custom-swal-popup {
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+        .custom-swal-title {
+            font-family: 'Arial', sans-serif;
+            font-size: 26px;
+            font-weight: 700;
+            color: #2c3e50; /* Matches the content color */
+        }
+        .custom-swal-button {
+            background-color: #0066cc !important; /* Strong button color */
+            color: #fff !important; /* White text */
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 12px 25px;
+            box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3); /* Subtle shadow */
+        }
+    </style>
 </body>
 
 </html>
