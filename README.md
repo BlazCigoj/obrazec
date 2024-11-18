@@ -9,7 +9,6 @@ This repository showcases the design and structure of a registration form for th
 - [Technologies Used](#technologies-used)
 - [Screenshots](#screenshots)
 - [How to Use](#how-to-use)
-- [License](#license)
 
 ## Overview
 The registration form is designed for users to sign up and provide all necessary personal details required for participation in activities such as betting and gaming offered by the E-Stave platform. It includes fields for personal data, contact information, and account preferences.
