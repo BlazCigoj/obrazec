@@ -24,7 +24,6 @@ The registration form is designed for users to sign up and provide all necessary
 - **HTML5**: Markup structure of the form.
 - **CSS3**: Styling for visual appeal and readability.
 - **JavaScript**: Enhancements for form validation and interaction.
-- **Backend Framework (optional)**: Placeholder for server-side integration to handle form submissions (e.g., Node.js, PHP).
 
 ## Screenshots
 Below are images illustrating the registration form and its layout:
