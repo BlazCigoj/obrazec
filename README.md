@@ -32,10 +32,10 @@ Below are images illustrating the registration form and its layout:
 ![Personal Information](screenshots/header.png)
 
 ### Contact Information Section
-![Contact Information](screenshots/contact-info.png)
+![Contact Information](screenshots/body1.png)
 
 ### Account and Financial Details
-![Account Details](screenshots/account-details.png)
+![Account Details](screenshots/end.png)
 
 ## How to Use
 1. **Clone the repository**:
